@@ -22,10 +22,11 @@ class Person extends React.Component {
     render() {
         const personData = this.state.person.map((item, i) => (
             <div className="card person-card mx-auto"  key={i}>
-                <img className="card-img-top" src={item.picture.medium} alt="Card"/>
+                <img className="card-img-top" src={item.picture.large} alt="Card"/>
                 <div className="card-body">
-                    <h5 className="card-title text-capitalize">{ item.name.first } { item.name.last }</h5>
+                    <p className="h4 card-title text-capitalize">{ item.name.first } { item.name.last }</p>
                     <p className="card-text">{item.cell}</p>
+                    <p className="card-text">{item.email}</p>
                 </div>
             </div>
         ));

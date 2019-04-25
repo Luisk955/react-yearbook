@@ -6,7 +6,8 @@ import Person from './person';
 const cont = 20;
 function App() {
   return (
-    <div className="container mt-2">
+    <div className="container-fluid mt-2">
+      <p className="h2">Yearbook</p>
       <div className="row">
         <div className="col-md-3 mx-md-auto mt-2 col-12">
           <Person></Person>
