@@ -21,7 +21,7 @@ class Person extends React.Component {
 
     render() {
         const personData = this.state.person.map((item, i) => (
-            <div className="card person-card"  key={i}>
+            <div className="card person-card mx-auto"  key={i}>
                 <img className="card-img-top" src={item.picture.medium} alt="Card"/>
                 <div className="card-body">
                     <h5 className="card-title text-capitalize">{ item.name.first } { item.name.last }</h5>
